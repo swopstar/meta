@@ -71,8 +71,13 @@ Every source file must include an SPDX header:
 
 ### Source Offer for Network Users
 
-AGPLv3 requires that users interacting with the application over a network can obtain the corresponding source code. This is satisfied by a link in **Settings → About this instance** pointing to the exact tagged commit used to build the running instance. The link must be embedded at compile time, not hardcoded to a branch.
+AGPLv3 requires that users interacting with the application over a network can obtain the corresponding source code. **Settings → About this instance** should display the licence, check for a source link, and show a compliance warning if none is configured. The link must be embedded at build time and point to a location where users can obtain the exact source code the server is running:
 
 MIT-licensed shared library dependencies carry no source disclosure requirement — ensuring their tagged versions remain publicly accessible is sufficient.
 
-This is tracked as future work and must be in place before any public release.
+- **CI artifact builds** — link to the specific commit on GitHub
+- **Release builds** — link to the GitHub Release page for the tagged version
+- **Unmodified distributor builds** — may link back to the upstream GitHub commit or release
+- **Modified distributor builds** — must link to the source of the modified build
+
+This must be in place before the software is ready for general use.
