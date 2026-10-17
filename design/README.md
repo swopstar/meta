@@ -1,6 +1,6 @@
 # Design
 
-Visual design assets for the swop* suite.
+Visual design assets shared across the swop* suite.
 
 ## Mockups
 
@@ -12,6 +12,9 @@ Screens shared across swop* applications.
 
 - [Auth](mockups/shared/auth/) — login and first-user setup
 
-### swoptape
+### Project-specific
 
-- [swoptape](mockups/swoptape/) — home, collections, artists, albums, search
+Designs for a single project live in that project's repository, under
+`docs/design/`:
+
+- [swoptape](https://github.com/swopstar/swoptape/tree/rewrite/rust/docs/design)

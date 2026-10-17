@@ -1,6 +1,6 @@
 # ADR-0000: swopcart Technology Stack
 
-**Status:** accepted  
+**Status:** accepted; backend section superseded by [ADR-0001](0001-rust.md)  
 **Date:** 2026-01-14
 
 ## Context

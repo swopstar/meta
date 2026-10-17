@@ -18,6 +18,8 @@ Format: `YYMM.RR.PP`
 
 Release `0` for the month is reserved for development and nightly builds.
 
+This version is for users: it is what the application reports in its UI, API and logs, and what release tags use. It is set at build time. Package manifests that are never published (`Cargo.toml`, `package.json`) don't need to carry it and can stay at `0.0.0`.
+
 ## Internal Shared Libraries
 
 Format: `0.YYMM.RR`

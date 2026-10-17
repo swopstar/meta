@@ -40,34 +40,40 @@ Infrastructure code in an end-user application may be individually licensed as M
 
 ```
 // SPDX-License-Identifier: MIT
-// Copyright (C) 2026 Raresh Nistor
+// SPDX-FileCopyrightText: 2026 Rareș Nistor
 ```
 
 The per-file header takes precedence; the rest of the project remains AGPLv3. This is only possible while the copyright is held entirely by the original author — files with external contributions cannot be individually relicensed without contributor agreement. A CLA may be introduced in the future to preserve this ability as the project grows.
 
 ## Compliance
 
-### LICENSE File
+Repositories follow the [REUSE specification](https://reuse.software/spec/), and `reuse lint` runs as part of each repository's checks.
 
-Each repository must include a `LICENSE` file in its root containing the full licence text for that repository.
+### Licence Texts
+
+Each licence used in a repository has its full text in the `LICENSES/` directory, named by its SPDX identifier (for example `LICENSES/AGPL-3.0-only.txt`). Retrieve the text with `reuse download <SPDX identifier>` rather than copying it by hand.
+
+The only exception is a repository with a single licence, which may instead keep the full text in a `LICENSE` file at its root.
 
 ### Copyright Notices
 
-Every source file must include an SPDX header:
+Every source file starts with a REUSE header. Each contributor adds their own `SPDX-FileCopyrightText` line when they first change a file.
 
 **AGPLv3 (end-user applications)**
 
 ```
 // SPDX-License-Identifier: AGPL-3.0-only
-// Copyright (C) 2026 Raresh Nistor
+// SPDX-FileCopyrightText: 2026 Rareș Nistor
 ```
 
 **MIT (shared libraries, or individually promoted files)**
 
 ```
 // SPDX-License-Identifier: MIT
-// Copyright (C) 2026 Raresh Nistor
+// SPDX-FileCopyrightText: 2026 Rareș Nistor
 ```
+
+Files that cannot carry a comment header (JSON, images, lock files and similar) are covered by annotations in a `REUSE.toml` file at the repository root.
 
 ### Source Offer for Network Users
 

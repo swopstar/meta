@@ -7,10 +7,20 @@ applications built for personal use.
 
 | Project | Description |
 |---|---|
-| [swopcart](projects/swopcart/) | Self-hosted game library manager |
-| [swoptape](projects/swoptape/) | Self-hosted music library manager |
-| [gokit](projects/gokit/) | Shared Go infrastructure library |
-| [react-ui](projects/react-ui/) | Shared React component library |
+| [swopcart](https://github.com/swopstar/swopcart/tree/main/docs) | Self-hosted game library manager |
+| [swoptape](https://github.com/swopstar/swoptape/tree/rewrite/rust/docs) | Self-hosted music library manager |
+| [gokit](https://github.com/swopstar/gokit/tree/main/docs) | Shared Go infrastructure library (being retired, see [ADR-0001](adr/0001-rust.md)) |
+| [react-ui](https://github.com/swopstar/react-ui/tree/main/docs) | Shared React component library |
+
+## Associate Projects
+
+Projects that use swop* resources (such as react-ui) but are not part of the
+suite. They follow their own conventions rather than the standards and ADRs
+here.
+
+| Project | Description | Uses |
+|---|---|---|
+| [pmhv](https://github.com/itisrazza/pmhv) | Small daemon and web UI for running VMs on a computer mainly used for something else | react-ui |
 
 ## Standards
 
@@ -23,7 +33,9 @@ Cross-project conventions that apply across the suite.
 ## Architecture Decision Records
 
 - [Suite-wide ADRs](adr/)
-- Project-specific ADRs are in each project's `adr/` folder
+- Project-specific ADRs are in each project's repository, under `docs/adr/`
+
+Each project's overview, architecture and roadmap live in its repository, under `docs/`.
 
 ## Licence
 
