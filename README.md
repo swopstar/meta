@@ -8,7 +8,7 @@ applications built for personal use.
 | Project | Description |
 |---|---|
 | [swopcart](https://github.com/swopstar/swopcart/tree/main/docs) | Self-hosted game library manager |
-| [swoptape](https://github.com/swopstar/swoptape/tree/rewrite/rust/docs) | Self-hosted music library manager |
+| [swoptape](https://github.com/swopstar/swoptape/tree/main/docs) | Self-hosted music library manager |
 | [gokit](https://github.com/swopstar/gokit/tree/main/docs) | Shared Go infrastructure library (being retired, see [ADR-0001](adr/0001-rust.md)) |
 | [react-ui](https://github.com/swopstar/react-ui/tree/main/docs) | Shared React component library |
 

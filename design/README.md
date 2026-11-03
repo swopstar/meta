@@ -17,4 +17,4 @@ Screens shared across swop* applications.
 Designs for a single project live in that project's repository, under
 `docs/design/`:
 
-- [swoptape](https://github.com/swopstar/swoptape/tree/rewrite/rust/docs/design)
+- [swoptape](https://github.com/swopstar/swoptape/tree/main/docs/design)

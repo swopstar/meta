@@ -9,6 +9,6 @@
 
 Each project keeps its own ADRs in its repository, under `docs/adr/`:
 
-- [swoptape](https://github.com/swopstar/swoptape/tree/rewrite/rust/docs/adr) (`ADR-T###`)
+- [swoptape](https://github.com/swopstar/swoptape/tree/main/docs/adr) (`ADR-T###`)
 - [react-ui](https://github.com/swopstar/react-ui/tree/main/docs/adr) (`ADR-R###`)
 - swopcart and gokit have no project ADRs yet
