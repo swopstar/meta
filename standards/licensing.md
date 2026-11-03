@@ -18,19 +18,13 @@ For clients that can be fully open-sourced and distributed without platform lice
 
 ### Mobile Clients (iOS, Android)
 
-Mobile clients require a custom copyleft license. GPL cannot be used unmodified because it prohibits restricting which distribution channels are permitted — but Apple App Store and Google Play Store terms conflict with GPL's redistribution requirements, and unrestricted distribution on those stores is undesirable.
+Licensed under `MIT OR Apache-2.0`, at the user's choice.
 
-The intended terms are:
-
-- **Permitted**: viewing, contributing, building for personal use, sideloading, and distribution via open or alternative stores (e.g. F-Droid, AltStore).
-- **Restricted**: distribution via Apple App Store or Google Play Store without a separate arrangement with the copyright holder.
-- **Copyleft**: modified versions must remain open under the same terms.
-
-The actual licence text needs to be drafted before any mobile client is released, and may benefit from legal review. This is tracked as future work.
+GPL doesn't sit well with Apple App Store and Google Play Store terms. A custom copyleft licence that restricted store distribution was considered, but it would have needed drafting and legal review, and it would have stopped mobile apps from sharing code freely with the Rust client crates. Anyone may build and publish the mobile apps, including on those stores.
 
 ## Shared Libraries
 
-Licensed under the [MIT License](https://opensource.org/license/mit).
+Licensed under the [MIT License](https://opensource.org/license/mit). Rust crates are licensed under `MIT OR Apache-2.0`, following the Rust ecosystem convention; this includes client crates kept inside an application's repository so that native clients can link them.
 
 Shared libraries contain only the infrastructure and shared DNA between swop* projects — job scheduling primitives, UI components, utilities — not the product logic that makes each application valuable. When a module matures into a standalone public library, it continues under MIT; no relicensing step is needed.
 
