@@ -20,6 +20,10 @@ Release `0` for the month is reserved for development and nightly builds.
 
 This version is for users: it is what the application reports in its UI, API and logs, and what release tags use. It is set at build time. Package manifests that are never published (`Cargo.toml`, `package.json`) don't need to carry it and can stay at `0.0.0`.
 
+### Release Tags
+
+A repository that ships a single application tags releases with the bare version (`2605.1.0`). A repository that ships several independently released components (for example a server, a desktop app and mobile apps) prefixes each tag with the component name: `server/2605.1.0`, `desktop/2606.1.0`. Each component has its own release stream.
+
 ## Internal Shared Libraries
 
 Format: `0.YYMM.RR`
